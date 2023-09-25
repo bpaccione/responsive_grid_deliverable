@@ -139,7 +139,7 @@ main div:focus{
 
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
-.container > overview{
+.overview{
   grid-column: 1/-1;
   height: 500px;
   background-image: url("../images/header.jpg");
@@ -150,13 +150,21 @@ first div in the grid  and place it in the grid. */
  four rows in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine seletors*/
-.about{}
+.about{
+  grid-column: 2/span 1;
+}
 
-.method{}
+.method{
+  grid-column: 2/span 1;
+}
 
-.clients{}
+.clients{
+  grid-column: 2/span 1;
+}
 
-.contact{}
+.contact{
+  grid-column: 2/span 1;
+}
 
 
 
