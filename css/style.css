@@ -120,11 +120,14 @@ nav a:hover{
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip a:focus{
-  position: absolute;
+  position:absolute;
+  top: 20px;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
-
+main div:focus{
+  border: 2px solid black;
+}
 
 
 /* Step 4: Write selector/rule property to style the container */
@@ -136,7 +139,7 @@ nav a:hover{
 
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
-.overview{
+.container > overview{
   grid-column: 1/-1;
   height: 500px;
   background-image: url("../images/header.jpg");
@@ -147,6 +150,16 @@ first div in the grid  and place it in the grid. */
  four rows in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine seletors*/
+.about{}
+
+.method{}
+
+.clients{}
+
+.contact{}
+
+
+
 
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
