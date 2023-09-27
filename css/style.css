@@ -115,13 +115,13 @@ nav a:hover{
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 .skip a{
   position: absolute;
-  top: -40px;
+  margin-top: -40px;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip a:focus{
   position:absolute;
-  top: 20px;
+  margin-top: 20px;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
@@ -151,19 +151,40 @@ first div in the grid  and place it in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine seletors*/
 .about{
+  grid-row-start: 2;
   grid-column: 2/span 1;
 }
-
+.about-image{
+  grid-row-start: 2;
+  grid-row-column: 1/-1;
+  max-height: 600px;
+}
 .method{
+  grid-row-start: 3;
   grid-column: 2/span 1;
 }
-
+.method-image{
+  grid-row-start: 3;
+  grid-column: 1/-1;
+  max-height: 600px;
+}
 .clients{
+  grid-row-start: 4;
   grid-column: 2/span 1;
 }
-
+.clients-image{
+  grid-row-start: 4;
+  grid-column: 1/-1;
+  max-height: 600px;
+}
 .contact{
+  grid-row-start: 5;
   grid-column: 2/span 1;
+}
+.contact-image{
+  grid-row-start: 5;
+  grid-column: 1/-1;
+  max-height: 600px;
 }
 
 
