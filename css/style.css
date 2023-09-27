@@ -159,7 +159,7 @@ first div in the grid  and place it in the grid. */
   grid-row-column: 1/-1;
   max-height: 600px;
 }
-.about{
+.about text-block{
   grid-row-start: 2;
   grid-column: 2/span 1;
 }
@@ -168,7 +168,7 @@ first div in the grid  and place it in the grid. */
   grid-column: 1/-1;
   max-height: 600px;
 }
-.method{
+.method text-block{
   grid-row-start: 3;
   grid-column: 2/span 1;
 }
@@ -177,7 +177,7 @@ first div in the grid  and place it in the grid. */
   grid-column: 1/-1;
   max-height: 600px;
 }
-.clients{
+.clients text-block{
   grid-row-start: 4;
   grid-column: 2/span 1;
 }
@@ -186,7 +186,7 @@ first div in the grid  and place it in the grid. */
   grid-column: 1/-1;
   max-height: 600px;
 }
-.contact{
+.contact text-block{
   grid-row-start: 5;
   grid-column: 2/span 1;
 }
