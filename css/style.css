@@ -163,6 +163,7 @@ first div in the grid  and place it in the grid. */
 .about{
   grid-row-start: 2;
   grid-column-start:2;
+  grid-column-end:3;
 }
 .about-image{
   grid-row-start: 2;
@@ -174,6 +175,7 @@ first div in the grid  and place it in the grid. */
 .method{
   grid-row-start: 3;
   grid-column-start:2;
+  grid-column-end:3;
   
 }
 .method-image{
@@ -186,6 +188,7 @@ first div in the grid  and place it in the grid. */
 .clients{
   grid-row-start: 4;
   grid-column-start:2;
+  grid-column-end:3;
 }
 .clients-image{
   grid-row-start: 4;
@@ -197,6 +200,7 @@ first div in the grid  and place it in the grid. */
 .contact{
   grid-row-start: 5;
   grid-column-start:2;
+  grid-column-end:3;
   
 }
 .contact-image{
