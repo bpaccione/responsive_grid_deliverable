@@ -238,59 +238,43 @@ first div in the grid  and place it in the grid. */
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
 .about{
-  grid-row-start: 2;
   grid-column-start:3;
-  grid-column-end:6; 
+  grid-column-end:5; 
 
 }
 .about-image{
-  grid-row-start: 2;
   grid-column-start:2;
-  grid-column-end:5; 
-  max-height: 600px;
-  overflow: hidden;
+  grid-column-end:4; 
 
 }
 .method{
-  grid-row-start: 3;
   grid-column-start:2;
-  grid-column-end:5; 
+  grid-column-end:4; 
 
 }
 .method-image{
-  grid-row-start: 3;
   grid-column-start:3;
-  grid-column-end:6; 
-  max-height: 600px;
-  overflow: hidden;
+  grid-column-end:5; 
 
 }
 .clients{
-  grid-row-start: 4;
   grid-column-start:3;
-  grid-column-end:6; 
+  grid-column-end:5; 
 
 }
 .clients-image{
-  grid-row-start: 4;
   grid-column-start:2;
-  grid-column-end:5; 
-  max-height: 600px;
-  overflow: hidden;
+  grid-column-end:4; 
 
 }
 .contact{
-  grid-row-start: 5;
   grid-column-start:2;
-  grid-column-end:5; 
+  grid-column-end:4; 
   
 }
 .contact-image{
-  grid-row-start: 5;
   grid-column-start:3;
-  grid-column-end:6; 
-  max-height: 600px;
-  overflow: hidden;
+  grid-column-end:4; 
 }
 }
 
