@@ -154,51 +154,58 @@ first div in the grid  and place it in the grid. */
  four rows in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine seletors*/
-.about-image{
-  grid-row-start: 2;
-  grid-column: 1/ span 2;
-  max-height: 600px;
-}
 .about{
   grid-row-start: 2;
   grid-column: 2/span 1;
 }
-.method-image{
-  grid-row-start: 3;
-  grid-column: 1/span 2;
+.about-image{
+  grid-row-start: 2;
+  grid-column: 1/ -1;
   max-height: 600px;
+  overflow: hidden;
 }
 .method{
   grid-row-start: 3;
   grid-column: 2/span 1;
 }
-.clients-image{
-  grid-row-start: 4;
-  grid-column: 1/span 2;
+.method-image{
+  grid-row-start: 3;
+  grid-column: 1/-1;
   max-height: 600px;
+  overflow: hidden;
 }
 .clients{
   grid-row-start: 4;
   grid-column: 2/span 1;
 }
-.contact-image{
-  grid-row-start: 5;
-  grid-column: 1/span 2;
+.clients-image{
+  grid-row-start: 4;
+  grid-column: 1/-1;
   max-height: 600px;
+  overflow: hidden;
 }
 .contact{
   grid-row-start: 5;
   grid-column: 2/span 1;
 }
-
-
-
+.contact-image{
+  grid-row-start: 5;
+  grid-column: 1/-1;
+  max-height: 600px;
+  overflow: hidden;
+}
 
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
-
+.text-bock{
+  margin: auto;
+  max-height: 250px;
+}
 
 /* Add your media query here */
+@media screen and (min-width: 800px) {
+  
+}
 
 
   /* Step 9: Write the selector/rule property to style the nav element */
