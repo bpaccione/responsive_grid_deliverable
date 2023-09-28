@@ -10,7 +10,6 @@ body{
   padding: 0;
 }
 
-
 .overview{
   background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
@@ -19,7 +18,6 @@ body{
   color: white;
   height: 400px;                /* Parallax effect */
 }
-
 
 .overview p{
   color: white;
@@ -107,10 +105,10 @@ footer{
 
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
-
 nav a:hover{
-  text-decoration:underline;
+  text-decoration: underline;
 }
+
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 .skip a{
@@ -120,7 +118,7 @@ nav a:hover{
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip a:focus{
-  position:absolute;
+  position: absolute;
   margin-top: 20px;
 }
 
@@ -132,8 +130,8 @@ main div:focus{
 
 /* Step 4: Write selector/rule property to style the container */
 .container{
-  display: grid;
-  grid-template_columns: 1fr 5fr 1fr;
+  display:grid;
+  grid-template-columns: 1fr 5fr 1fr;
   gap: 15px;
 }
 
@@ -141,6 +139,7 @@ main div:focus{
 first div in the grid  and place it in the grid. */
 .overview{
   grid-column: 1/-1;
+  height: 500px;
   background-image: url("../images/header.jpg");
   min-height: 500px;
   background-attachment: fixed;
@@ -160,13 +159,14 @@ first div in the grid  and place it in the grid. */
 }
 .about-image{
   grid-row-start: 2;
-  grid-column: 1/ -1;
+  grid-column: 1/-1;
   max-height: 600px;
   overflow: hidden;
 }
 .method{
   grid-row-start: 3;
   grid-column: 2/span 1;
+  
 }
 .method-image{
   grid-row-start: 3;
@@ -187,6 +187,7 @@ first div in the grid  and place it in the grid. */
 .contact{
   grid-row-start: 5;
   grid-column: 2/span 1;
+  
 }
 .contact-image{
   grid-row-start: 5;
@@ -197,16 +198,15 @@ first div in the grid  and place it in the grid. */
 
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
-.text-bock{
+.text-block{
   margin: auto;
   max-height: 250px;
 }
 
 /* Add your media query here */
-@media screen and (min-width: 800px) {
+@media screen and (min-width:800px) {
   
 }
-
 
   /* Step 9: Write the selector/rule property to style the nav element */
 
