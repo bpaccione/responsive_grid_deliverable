@@ -108,12 +108,19 @@ links in the navigation are in the hover or focus state.*/
 nav a:hover{
   text-decoration: underline;
 }
+nav a:focus{
+  text-decoration: underline;
+  border: solid 2px;
+}
 
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 .skip a{
   position: absolute;
   margin-top: -40px;
+  margin-left: auto;
+  border: solid 2px;
+  overflow: hidden;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
@@ -155,48 +162,46 @@ first div in the grid  and place it in the grid. */
       /*This will be a lot of rules.... but be strategic and combine seletors*/
 .about{
   grid-row-start: 2;
-  grid-column-start: 2
-    
-  : 2/span 1;
+  grid-column-start:2;
 }
 .about-image{
   grid-row-start: 2;
-  grid-column-start: 1;
+  grid-column-start:1;
   grid-column-end: 4;
   max-height: 600px;
   overflow: hidden;
 }
 .method{
   grid-row-start: 3;
-  grid-column-start: 2
+  grid-column-start:2;
   
 }
 .method-image{
   grid-row-start: 3;
-  grid-column-start: 1;
+  grid-column-start:1;
   grid-column-end: 4;
   max-height: 600px;
   overflow: hidden;
 }
 .clients{
   grid-row-start: 4;
-  grid-column-start: 2
+  grid-column-start:2;
 }
 .clients-image{
   grid-row-start: 4;
-  grid-column-start: 1;
+  grid-column-start:1;
   grid-column-end: 4;
   max-height: 600px;
   overflow: hidden;
 }
 .contact{
   grid-row-start: 5;
-  grid-column-start: 2
+  grid-column-start:2;
   
 }
 .contact-image{
   grid-row-start: 5;
-  grid-column-start: 1;
+  grid-column-start:1;
   grid-column-end: 4;
   max-height: 600px;
   overflow: hidden;
@@ -211,15 +216,77 @@ first div in the grid  and place it in the grid. */
 
 /* Add your media query here */
 @media screen and (min-width:800px) {
-  
+
+ /* Step 9: Write the selector/rule property to style the nav element */
+  nav{
+  text-align: right;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-  /* Step 9: Write the selector/rule property to style the nav element */
-
- 
   /* Step 10: Write the selector/rule property to update the .container class */
-
+.container{
+  display:grid;
+  grid-template-columns: 50px auto 500px auto 50px;
+}
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
+.about{
+  grid-row-start: 2;
+  grid-column-start:3;
+  grid-column-end:6; 
 
+}
+.about-image{
+  grid-row-start: 2;
+  grid-column-start:2;
+  grid-column-end:5; 
+  max-height: 600px;
+  overflow: hidden;
+
+}
+.method{
+  grid-row-start: 3;
+  grid-column-start:2;
+  grid-column-end:5; 
+
+}
+.method-image{
+  grid-row-start: 3;
+  grid-column-start:3;
+  grid-column-end:6; 
+  max-height: 600px;
+  overflow: hidden;
+
+}
+.clients{
+  grid-row-start: 4;
+  grid-column-start:3;
+  grid-column-end:6; 
+
+}
+.clients-image{
+  grid-row-start: 4;
+  grid-column-start:2;
+  grid-column-end:5; 
+  max-height: 600px;
+  overflow: hidden;
+
+}
+.contact{
+  grid-row-start: 5;
+  grid-column-start:2;
+  grid-column-end:5; 
+  
+}
+.contact-image{
+  grid-row-start: 5;
+  grid-column-start:3;
+  grid-column-end:6; 
+  max-height: 600px;
+  overflow: hidden;
+}
+}
 
