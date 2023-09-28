@@ -155,43 +155,49 @@ first div in the grid  and place it in the grid. */
       /*This will be a lot of rules.... but be strategic and combine seletors*/
 .about{
   grid-row-start: 2;
-  grid-column: 2/span 1;
+  grid-column-start: 2
+    
+  : 2/span 1;
 }
 .about-image{
   grid-row-start: 2;
-  grid-column: 1/-1;
+  grid-column-start: 1;
+  grid-column-end: 4;
   max-height: 600px;
   overflow: hidden;
 }
 .method{
   grid-row-start: 3;
-  grid-column: 2/span 1;
+  grid-column-start: 2
   
 }
 .method-image{
   grid-row-start: 3;
-  grid-column: 1/-1;
+  grid-column-start: 1;
+  grid-column-end: 4;
   max-height: 600px;
   overflow: hidden;
 }
 .clients{
   grid-row-start: 4;
-  grid-column: 2/span 1;
+  grid-column-start: 2
 }
 .clients-image{
   grid-row-start: 4;
-  grid-column: 1/-1;
+  grid-column-start: 1;
+  grid-column-end: 4;
   max-height: 600px;
   overflow: hidden;
 }
 .contact{
   grid-row-start: 5;
-  grid-column: 2/span 1;
+  grid-column-start: 2
   
 }
 .contact-image{
   grid-row-start: 5;
-  grid-column: 1/-1;
+  grid-column-start: 1;
+  grid-column-end: 4;
   max-height: 600px;
   overflow: hidden;
 }
